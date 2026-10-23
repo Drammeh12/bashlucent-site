@@ -258,7 +258,7 @@
         <h3>ClearKobo</h3>
         <div class="tag">Payment reconciliation</div>
         <p>Know every naira landed. ClearKobo checks payments against your bank and processors, flags what's missing or short, and confirms money is real before you release goods. No more guesswork.</p>
-        <a class="go" data-clearkobo href="#contact">Visit ClearKobo <span class="arr" aria-hidden="true">→</span></a>
+        <a class="go" data-clearkobo href="https://clearkobo-production.up.railway.app" target="_blank" rel="noopener">Visit ClearKobo <span class="arr" aria-hidden="true">→</span></a>
       </article>
 
       <article class="card reveal" style="--c:#8b7cff">
@@ -355,7 +355,7 @@
     <div>© <span id="yr"></span> Bash Lucent · Software for African businesses</div>
     <div class="foot-links">
       <a href="https://bashcloud.io" target="_blank" rel="noopener">Bash Cloud</a>
-      <a data-clearkobo href="#contact">ClearKobo</a>
+      <a data-clearkobo href="https://clearkobo-production.up.railway.app" target="_blank" rel="noopener">ClearKobo</a>
       <a href="https://naijacampus.org" target="_blank" rel="noopener">Naija Campus</a>
       <a href="mailto:businesswithsaleem001@gmail.com">Contact</a>
     </div>
@@ -378,7 +378,7 @@
   },{threshold:.14});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   // ClearKobo link — set this to your live ClearKobo URL
-  const CLEARKOBO_URL = ""; // e.g. "https://app.clearkobo.com"
+  const CLEARKOBO_URL = "https://clearkobo-production.up.railway.app";
   if (CLEARKOBO_URL){
     document.querySelectorAll('[data-clearkobo]').forEach(a=>{ a.href = CLEARKOBO_URL; a.target="_blank"; a.rel="noopener"; });
   }
