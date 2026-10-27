@@ -371,18 +371,18 @@
   const nav = document.getElementById('nav');
   const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
   onScroll(); addEventListener('scroll', onScroll, {passive:true});
-  // (static background — no cursor motion)
+  // (static background, no cursor motion)
   // scroll reveal
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
   },{threshold:.14});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-  // ClearKobo link — set this to your live ClearKobo URL
+  // ClearKobo link, set this to your live ClearKobo URL
   const CLEARKOBO_URL = "https://clearkobo-production.up.railway.app";
   if (CLEARKOBO_URL){
     document.querySelectorAll('[data-clearkobo]').forEach(a=>{ a.href = CLEARKOBO_URL; a.target="_blank"; a.rel="noopener"; });
   }
-  // founder personal site — set this tonight when it's live
+  // founder personal site, set this tonight when it's live
   const FOUNDER_SITE = "https://saleem-site.apps.bashcloud.io/";
   if (FOUNDER_SITE){
     document.querySelectorAll('[data-founder-site]').forEach(a=>{ a.href = FOUNDER_SITE; a.target="_blank"; a.rel="noopener"; });
