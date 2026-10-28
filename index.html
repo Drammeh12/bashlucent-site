@@ -83,6 +83,7 @@
 
   /* ---------- products ---------- */
   .products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+  @media(min-width:901px){.products .card:nth-child(4){grid-column:2}}
   @media(max-width:900px){.products{grid-template-columns:1fr}}
   .card{position:relative;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px 26px;
     background:linear-gradient(180deg,var(--panel),var(--ink));overflow:hidden;transition:transform .35s,border-color .35s}
@@ -216,18 +217,20 @@
     <img class="hero-logo" id="heroLogo" alt="Bash Lucent" width="108" height="108">
     <span class="eyebrow"><span class="dot"></span> Software studio · Built in Africa</span>
     <h1 class="title">The software African businesses <span class="lit">actually run on.</span></h1>
-    <p class="lede">Bash Lucent designs and operates the products African businesses use to launch online, get paid with confidence, and grow, from cloud hosting to payment clarity to the networks that connect a new generation.</p>
+    <p class="lede">Bash Lucent designs and operates the products African businesses use to launch online, get paid with confidence, stay secure, and grow, from cloud hosting to payment clarity to application security to the networks that connect a new generation.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#products">Explore our products <span aria-hidden="true">→</span></a>
       <a class="btn btn-ghost" href="#contact">Work with us</a>
     </div>
     <div class="term" aria-hidden="true">$ bashlucent <span class="pr">›</span> <span id="typed"></span><span class="cur"></span></div>
     <div class="trust">
-      <span><b>3</b> products live</span>
+      <span><b>4</b> products live</span>
       <span>•</span>
       <span><b>Cloud</b> hosting</span>
       <span>•</span>
       <span><b>Fintech</b> reconciliation</span>
+      <span>•</span>
+      <span><b>App</b> security</span>
       <span>•</span>
       <span><b>Student</b> networks</span>
     </div>
@@ -238,7 +241,7 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="kicker">What we build</div>
-      <h2>Three products. One mission: make African business effortless.</h2>
+      <h2>Four products. One mission: make African business effortless.</h2>
       <p>Each product solves a real, daily problem for African founders and teams, and each one stands on its own.</p>
     </div>
     <div class="products">
@@ -270,6 +273,15 @@
         <a class="go" href="https://naijacampus.org" target="_blank" rel="noopener">Visit naijacampus.org <span class="arr" aria-hidden="true">→</span></a>
       </article>
 
+      <article class="card reveal" style="--c:#2fe6a6">
+        <div class="halo"></div>
+        <div class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5cf0c0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9.5 4.6-1.1 8-4.5 8-9.5V6l-8-3Z"/><rect x="9" y="11.5" width="6" height="5" rx="1"/><path d="M10.5 11.5V10a1.5 1.5 0 0 1 3 0v1.5"/></svg></div>
+        <h3>Lucent Shield</h3>
+        <div class="tag">Application security</div>
+        <p>See exactly what is exposed. Lucent Shield scans the code and websites you own, finds leaked secrets, vulnerable dependencies and insecure settings, and shows you the fix for each one, with live monitoring that watches your apps around the clock.</p>
+        <span class="go" style="opacity:.7;cursor:default">Launching soon</span>
+      </article>
+
     </div>
   </div>
 </section>
@@ -281,10 +293,10 @@
         <div class="kicker">Why we exist</div>
         <h2>World-class software, built for African realities.</h2>
         <p>African businesses have been handed tools designed for someone else's market, then asked to make them fit. Bash Lucent flips that. We build infrastructure and products from the ground up for how business actually works here: local payments, local pricing, local trust. Fast to adopt, honest in what they promise, and strong enough to grow on.</p>
-        <p>We keep our products independent but connected, so a founder can host on Bash Cloud, reconcile with ClearKobo, and reach the next generation on Naija Campus, all under one roof.</p>
+        <p>We keep our products independent but connected, so a founder can host on Bash Cloud, reconcile with ClearKobo, secure it all with Lucent Shield, and reach the next generation on Naija Campus, all under one roof.</p>
       </div>
       <div class="stats reveal">
-        <div class="stat"><b>3</b><span>products in the market</span></div>
+        <div class="stat"><b>4</b><span>products in the market</span></div>
         <div class="stat"><b>₦</b><span>naira-first pricing</span></div>
         <div class="stat"><b>100%</b><span>built in-house</span></div>
         <div class="stat"><b>Africa</b><span>where it's made for</span></div>
@@ -356,6 +368,7 @@
     <div class="foot-links">
       <a href="https://bashcloud.io" target="_blank" rel="noopener">Bash Cloud</a>
       <a data-clearkobo href="https://clearkobo-production.up.railway.app" target="_blank" rel="noopener">ClearKobo</a>
+      <a href="#products">Lucent Shield</a>
       <a href="https://naijacampus.org" target="_blank" rel="noopener">Naija Campus</a>
       <a href="mailto:businesswithsaleem001@gmail.com">Contact</a>
     </div>
